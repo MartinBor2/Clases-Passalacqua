@@ -1,0 +1,13 @@
+create database hospital;
+use hospital;
+create table pacientes(
+    ID_pacientes int primary key not null,
+    apellido varchar(50) not null,
+    nombre varchar(50) not null,
+    cuil int not null,
+    fecha_de_nacimiento date not null,
+    edad int null,
+    tipo_sangre varchar (4) not null,
+    tel int not null);
+insert into pacientes(ID_pacientes,apellido,nombre,cuil,fecha_de_nacimiento,edad,tipo_sangre,tel)
+values("001","Barragan","Joaquin","201111113","07/09/2005"," ","0+","1129229229");
