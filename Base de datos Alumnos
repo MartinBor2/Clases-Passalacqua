@@ -1,0 +1,22 @@
+CREATE DATABASE colegio;
+create TABLE alumnos(
+    cuil varchar (13) PRIMARY KEY not null,
+    apellido varchar (50) not null,
+    nombre varchar (50) not null,
+    fecha_de_nacimiento date not null,
+    edad int null,
+    direccion varchar(50) not null,
+    altura int not null,
+    piso int null,
+    departamento varchar(5) null,
+    codigo_postal varchar(8) not null,
+    telefono_fijo int null,
+    telefono_movil int null,
+    email varchar (100) not null,
+    grupo_sanguineo varchar (4) not null
+    );
+insert into alumnos(`cuil`,`apellido`,`nombre`,`fecha_de_nacimiento`,`edad`,`direccion`,`altura`,`piso`,`departamento`,`codigo_postal`,`telefono_fijo`,`telefono_movil`,`email`,`grupo_sanguineo`)
+VALUES("20111111118","Passalacqua","Diego","1988/12/07"," ","Avenida La Plata","1523"," "," ","1650"," ","1130256898","dep@gmail.com","AB+");
+TRUNCATE alumnos;
+drop table alumnos;
+drop DATABASE colegio;
