@@ -1,0 +1,7 @@
+create table profesores(
+    ID_profesor varchar(50) PRIMARY KEY not null,
+    apellido varchar (50) not null,
+    nombre varchar (50) not null,
+    edad int not null
+    );
+    
