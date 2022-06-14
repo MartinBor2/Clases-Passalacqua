@@ -4,4 +4,15 @@ create table profesores(
     nombre varchar (50) not null,
     edad int not null
     );
+    insert into profesores(ID_profesor,apellido,nombre,edad)
+values("0002","Coronel","Ezequiel","30");
+insert into profesores(ID_profesor,apellido,nombre,edad)
+values("0003","Fernandez","Brian","31");
+values("0003","Fernandez","Brian","31");}
+SELECT apellido FROM `profesores` WHERE edad>30;
+SELECT apellido,nombre FROM `profesores` WHERE edad>30;
+SELECT ID_profesor FROM `profesores` WHERE nombre='Brian';
+SELECT edad FROM `profesores` WHERE ID_profesor<=002;
+SELECT edad FROM `profesores` WHERE ID_profesor<=002;
+SELECT * FROM `profesores` WHERE edad<33;
     
