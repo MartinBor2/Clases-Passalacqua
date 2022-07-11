@@ -25,3 +25,6 @@ VALUES ("0003","0002","Gomez","Sol");
 
 insert into alumnos(`ID_alumnos`,`ID_institucion`,`Apellido`,`Nombre`)
 VALUES ("0003","0002","Gomez","Sol");
+
+select *
+from alumnos a inner join institucion i on a.ID_alumnos=i.ID_institucion;
