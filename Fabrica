@@ -1,0 +1,15 @@
+create database fabrica;
+
+create table Ventas(
+    id_producto int PRIMARY KEY not null,
+    nombre_producto varchar(50) not null,
+    precio int not null,
+    venta_total int not null,
+    total INT not null);
+    
+    INSERT into ventas(ID_producto, nombre_producto, precio)
+values("0005","Matecol","150");
+SELECT SUM(Precio) FROM ventas;
+SELECT MIN(precio) FROM ventas;
+SELECT MAX(precio) FROM ventas;
+SELECT AVG(precio) FROM ventas;
