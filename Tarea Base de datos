@@ -11,4 +11,5 @@ Listar el nombre de institucion, el I.numero cuando el apellido sea Lopez o el A
 1) SELECT I.ID_institucion, A.ID_alumnos, A.Apellido from institucion I INNER JOIN alumnos A on I.ID_institucion= A.ID_institucion where I.nombre="EEST" OR I.numer!="0003";
 2) select *
 from alumnos a inner join institucion i on a.ID_alumnos=i.ID_institucion;
-3) 
+3) SELECT A.Nombre, AVG ID_institucion, SUM ID_alumnos, MAX institucion, min ID_institucion
+from institucion I inner join alumnos A on I.ID_institucion=A.ID_institucion
