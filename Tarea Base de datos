@@ -1,0 +1,14 @@
+Listar el ID_alumnos, ID_institucion, A.apellido where cuando el nombre de institucion sea eest y el numero distinto a 3
+
+Listar todos los datos de la tabla institucion y alumnos 
+
+Listar el nombre de la tabla alumnos el promedio de ID_institucion la suma de ID_alumnos el max de los numeros 
+de la tabla institucion y el min de la tabla institucion 
+
+Listar el nombre de institucion, el I.numero cuando el apellido sea Lopez o el A.nombre sea "Sol" o el ID_alumnos sea
+0002
+
+1) SELECT I.ID_institucion, A.ID_alumnos, A.Apellido from institucion I INNER JOIN alumnos A on I.ID_institucion= A.ID_institucion where I.nombre="EEST" OR I.numer!="0003";
+2) select *
+from alumnos a inner join institucion i on a.ID_alumnos=i.ID_institucion;
+3) 
