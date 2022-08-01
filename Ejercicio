@@ -1,0 +1,11 @@
+create table Zapatillas(
+    Nombre varchar(60) PRIMARY KEY not null,
+    Talle int not null,
+    Para varchar(15) not null,
+    Precio int not null,
+    Stock int not null,
+    Tiendas varchar(50) not null,
+    Ventas int not null,
+    Total-recaudado-del-dia int not null,
+    Total-del-mes int not null,
+    Gato-de-envios int not null);
