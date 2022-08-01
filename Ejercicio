@@ -6,6 +6,6 @@ create table Zapatillas(
     Stock int not null,
     Tiendas varchar(50) not null,
     Ventas int not null,
-    Total-recaudado-del-dia int not null,
-    Total-del-mes int not null,
-    Gato-de-envios int not null);
+    Total_recaudado_del_dia int not null,
+    Total_del_mes int not null,
+    Gasto_de_envios int not null);
