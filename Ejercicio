@@ -9,3 +9,39 @@ create table Zapatillas(
     Total_recaudado_del_dia int not null,
     Total_del_mes int not null,
     Gasto_de_envios int not null);
+
+create table Remeras(
+    Nombre varchar(60) PRIMARY KEY not null,
+    Talle int not null,
+    Para varchar(15) not null,
+    Precio int not null,
+    Stock int not null,
+    Tiendas varchar(50) not null,
+    Ventas int not null,
+    Total_recaudado_del_dia int not null,
+    Total_del_mes int not null,
+    Gasto_de_envios int not null);
+          
+  create table Botines(
+    Nombre varchar(60) PRIMARY KEY not null,
+    Talle int not null,
+    Para varchar(15) not null,
+    Precio int not null,
+    Stock int not null,
+    Tiendas varchar(50) not null,
+    Ventas int not null,
+    Total_recaudado_del_dia int not null,
+    Total_del_mes int not null,
+    Gasto_de_envios int not null); 
+    
+  create table Pantalones(
+    Nombre varchar(60) PRIMARY KEY not null,
+    Talle int not null,
+    Para varchar(15) not null,
+    Precio int not null,
+    Stock int not null,
+    Tiendas varchar(50) not null,
+    Ventas int not null,
+    Total_recaudado_del_dia int not null,
+    Total_del_mes int not null,
+    Gasto_de_envios int not null);
