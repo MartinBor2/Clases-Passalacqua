@@ -1,0 +1,107 @@
+	/*Armar un programa en el que el usuario ingresara un mes del año. Si el mes ingresado es Enero, Febrero o Marzo
+	dara como resultado Verano. Si el mes ingresado es Abril, Mayo y Junio dara como resultado otoño. Si el mes 
+	ingresado es Julio, Agosto o Septiembre, sera invierno. Los tres meses restantes seran Primavera*/
+  
+  
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	
+	/*Armar un programa en el que el usuario ingresara un mes del año. Si el mes ingresado es Enero, Febrero o Marzo
+	dara como resultado Verano. Si el mes ingresado es Abril, Mayo y Junio dara como resultado otroño. Si el mes 
+	ingresado es Julio, Agosto o Septiembre, sera invierno. Los tres meses restantes seran Primavera*/
+	
+	char A[35];
+	setlocale(LC_ALL,"");
+	printf("Ingrese un mes del año: ");
+	scanf("%s",&A);
+	if(strcmp(A, "Enero")==0){
+		printf("Verano");
+	}
+	else if(strcmp(A, "ENERO")==0){
+		printf("Verano");
+	}
+	else if(strcmp(A, "enero")==0){
+		printf("Verano");
+	}
+	else if(strcmp(A, "Febrero")==0){
+		printf("Verano");
+	}
+	else if(strcmp(A, "FEBRERO")==0){
+		printf("Verano");
+	}
+	else if(strcmp(A, "febrero")==0){
+		printf("Verano");
+	}
+	else if(strcmp(A, "Marzo")==0){
+		printf("Verano");
+	}
+		else if(strcmp(A, "MARZO")==0){
+		printf("Verano");
+	}
+		else if(strcmp(A, "marzo")==0){
+		printf("Verano");
+	}
+		else if(strcmp(A, "Abril")==0){
+		printf("Otoño");
+	}
+		else if(strcmp(A, "ABRIL")==0){
+		printf("Otoño");
+	}
+		else if(strcmp(A, "abril")==0){
+		printf("Otoño");
+	}
+		else if(strcmp(A, "Mayo")==0){
+		printf("Otoño");
+	}
+		else if(strcmp(A, "MAYO")==0){
+		printf("Otoño");
+	}
+		else if(strcmp(A, "mayo")==0){
+		printf("Otoño");
+	}
+		else if(strcmp(A, "Junio")==0){
+		printf("Otoño");
+	}
+		else if(strcmp(A, "JUNIO")==0){
+		printf("Otoño");
+	}
+	else if(strcmp(A, "junio")==0){
+		printf("Otoño");
+	}
+	else if(strcmp(A, "Julio")==0){
+		printf("Invierno");
+	}
+	else if(strcmp(A, "JULIO")==0){
+		printf("Invierno");
+	}
+	else if(strcmp(A, "julio")==0){
+		printf("Invierno");
+	}
+	else if(strcmp(A, "Agosto")==0){
+		printf("Invierno");
+	}
+	else if(strcmp(A, "AGOSTO")==0){
+		printf("Invierno");
+	}
+	else if(strcmp(A, "agosto")==0){
+		printf("Invierno");
+	}
+	else if(strcmp(A, "Septiembre")==0){
+		printf("Invierno");
+	}
+	else if(strcmp(A, "SEPTIEMBRE")==0){
+		printf("Invierno");
+	}
+	else if(strcmp(A, "septiembre")==0){
+		printf("Invierno");
+	}
+	else
+	printf("Primavera");
+	return 0;
+}
