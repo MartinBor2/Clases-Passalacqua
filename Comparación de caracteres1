@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	
+	char A[3];
+	printf("Ingrese una nota(TEA,TEP,TED)");
+	scanf("%s",&A);
+	if(strcmp(A,"TEA")==0){
+		printf("Aprobado");
+	}
+	else if(strcmp(A,"Tea")==0){
+		printf("Aprobado");
+	}
+	else if(strcmp(A,"tea")==0){
+	printf("Aprobado");
+	}
+	else if(strcmp(A,"TEP")==0){
+		printf("En proceso");
+	}
+	else if(strcmp(A,"Tep")==0){
+		printf("En proceso");
+	}
+	else if(strcmp(A,"tep")==0){
+		printf("En proceso");
+	}
+	else if(strcmp(A,"TED")==0){
+		printf("Desaprobado");
+	}
+	else if(strcmp(A,"Ted")==0){
+		printf("Desaprobado");
+	}
+	else if(strcmp(A,"ted")==0){
+		printf("Desaprobado");
+	}
+	else{
+		printf("Opcion incorrecta");
+	}
+
+	return 0;
+}
