@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	
+	char A[15];
+	char B[15];
+	printf("Ingrese una palabra: ");
+	scanf("%s",&A);
+	printf("Ingrese otra palabra: ");
+	scanf("%s",&B);
+	if (strcmp(A,B)==0)
+    {
+        printf("Las dos palabras son iguales");
+    }
+    else
+    {
+    	printf("Son distintas");
+    }
+
+	return 0;
+}
