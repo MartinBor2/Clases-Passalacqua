@@ -1,0 +1,49 @@
+int main(int argc, char *argv[]) {
+	int x;
+    x=1;
+    while(x<=100)
+	{
+        printf("%d\n",x);
+        x=x+1;
+    }
+	return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+int main(int argc, char *argv[]) {
+	/*armar un programa donde el programa empiece en 1 y va a tener que llegar hasta el numero positivo que ingrese el user*/
+	int x,y;
+    x=1;
+    printf("Ingrese el numero: ");
+    scanf("%d",&y);
+    while(x<=y)
+	{
+        printf("%d\n",x);
+        x=x+1;
+    }
+	return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+int main(int argc, char *argv[]) {
+	/*armar un programa donde el user ingrese 10 numeros el sistema tiene que deolver la suma total de los 10 numeros y el promedio*/
+	int w,x,z;
+	float y;
+	x=1;
+	w=0;
+    while(x<=10)
+	{
+        printf("Ingrese los numeros: ");
+        scanf("%d",&z);
+        w=w+z;
+        x=x+1;
+    }
+    y=w/z;
+    printf("La suma de los 10 valores es: %d\n ",w);
+    printf("El promedio es: %f",y);
+	return 0;
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
