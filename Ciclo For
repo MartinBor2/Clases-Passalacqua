@@ -32,3 +32,29 @@
 		printf("%c",i);
 	}
   5)
+  6)	int i;
+	for(i=0; i<1; i++){
+		printf("Martin")
+	}
+  7)	int a;
+	int b;
+	int resul=0;
+	int result=0;
+	int result2=0;
+	int i;
+	float promedio;
+	for(i=0; i<5; i++){
+		printf("Ingrese el numero: ");
+		scanf("%d",&a);
+		resul=resul+a;
+	}
+	for(i=0; i<5; i++){
+		printf("Ingrese el numero: ");
+		scanf("%d",&b);
+		result=result+b;
+	}
+	printf("%d\n",resul);
+	printf("%d\n",result);
+	result2=resul+result;
+	printf("La suma es: %d",result2);
+	result2/100
