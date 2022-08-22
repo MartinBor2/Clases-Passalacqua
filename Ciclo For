@@ -1,0 +1,34 @@
+		/* Armar un programa el cual muestre los numeros del 1000 al 10 de 1 en 1
+	Armar un programa el cual muestre los numeros impares del 1 al 99
+	Armar un programa el cual muestre todos los numeros pares de 1 y 3 cifras
+	Armar un programa el cual muestre el abecedario 
+	Armar un programa el cual muestre las vocales 
+	Armar un programa el cual muestre su nombre
+	Armar un programa en el que el user ingresara 10 numeros. El sistema devolvera como resultado la suma de los numeros ingresados y el promedio 
+	Armar un programa en el cual el user ingresara 10 notas numericas del 1 al 10. Si la nota esta en el rango de 1 a 3 inclusive el alumno esta aplasado. 
+	Si esta entre 4 y 6 inclusive el alumno esta en proceso. Si la nota esta entre 7 y 10 el alumno esta aprobado. */
+
+1)  int x;
+	for(x=1000; x>=100 ;x--){
+		printf("%d",x);
+		printf("\n");
+	}
+2) 	int i;
+	for(i=1; i<=99; i++){
+		if(i/2 !=0){
+			printf("%d",i);
+			printf("\n");
+		}
+	}
+  3) int i;
+	for(i=1; i<999; i++){
+		if(i/2 ==0){
+			printf("%d",i);
+			printf("\n");
+		}
+	}
+  4) char i;
+	for(i='a'; i<='z'; i++){
+		printf("%c",i);
+	}
+  5)
