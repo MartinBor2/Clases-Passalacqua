@@ -31,12 +31,23 @@
 	for(i='a'; i<='z'; i++){
 		printf("%c",i);
 	}
-  5)
+  5) 	
+char x;
+char z;
+for(x='A'; x<='I'; x=x+4){
+	printf("%c",x);
+	printf("\n");
+}
+for(z='O'; z<='U'; z=z+6){
+	printf("%c",z);
+	printf("\n");
+}
+
   6)	int i;
 	for(i=0; i<1; i++){
 		printf("Martin")
 	}
-  7)	int a;
+  7)		int a;
 	int b;
 	int resul=0;
 	int result=0;
@@ -56,5 +67,25 @@
 	printf("%d\n",resul);
 	printf("%d\n",result);
 	result2=resul+result;
-	printf("La suma es: %d",result2);
-	result2/100
+	printf("La suma es: %d\n",result2);
+	promedio=result2/2;
+	printf("El promedio es: %f",promedio);
+8) 	int a,b;
+	float c;
+	int i;
+	for(i=0; i<10; i++){
+		printf("Ingrese la nota del 1 al 10: ");
+		scanf("%d",&a);
+		b=b+a;
+	}
+	c=b/10;
+		if(c==1&&c<=3){
+		printf("Esta desaprobado");
+	}
+	else if(c==4&&c<=6){
+		printf("Esta en proceso");
+	}
+	else if(c==7&&c<=10){
+		printf("Esta aprobado");
+	}
+	
