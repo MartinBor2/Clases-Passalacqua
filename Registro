@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+void Introduction()
+{
+	setlocale(LC_ALL,"");
+	system("color B0");
+	
+	
+	printf(" ===================================================================================================================\n");
+	printf("|\t                                    <<<PAGINA PRINCIPAL>>>\t                                            |\n");
+	printf("|\t                                                                                                            |\n");
+	printf("|\t                                                                                                            |\n");
+	printf("|\t                                                                                                            |\n");
+	printf("|\t    1. Registro de Usuario\t                                                                            |\n");
+	printf("|\t                                                                                                            |\n");
+	printf("|\t    2. Inicio de Sesion   \t                                                                            |\n");
+	printf("|\t                                                                                                            |\n");
+	printf("|\t                                                                                                            |\n");
+	printf("|\t                                                                                                            |\n");
+	printf("|\t                                                                                                            |\n");
+	printf("|\t                                                                                                            |\n");
+    printf("|\t                                                                                                            |\n");
+	printf("|\t                                                                                         ©Joaquín Barragán  |\n");
+	printf(" ===================================================================================================================");	
+}
+void Nudo()
+{
+	int i;
+	char User;
+	char Contra;
+	printf("------------------");
+	printf("------LOGIN-------\n");
+	printf("------------------\n");
+	printf("--User:           \n");
+	scanf("%d",&User);
+	printf("------------------\n");
+	if(strcmp(User, "admin")==0){
+	printf("--Contra:         \n");
+	scanf("%d",&Contra);
+}
+
+}
+int main(int argc, char *argv[]) {
+	Introduction();
+	Nudo();
+	return 0;
+}
