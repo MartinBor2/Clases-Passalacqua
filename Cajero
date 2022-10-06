@@ -1,0 +1,137 @@
+#include <stdio.h>
+#include <stdlib.h>
+float saldo = 1000;
+void inicio(){
+int a,i;
+int j;
+char usuario[6];
+char nom[50];
+char ape[50];
+char fn[20];
+char user[10];
+char contra[10];
+void enlace();
+char ADMIN[10] = "lol";
+char clave[10] = "4444";
+for(i=1; i<=3; i++){
+    do{
+    i=i+1;
+    printf("\t---------------LOGIN----------------\n\n ");
+    printf("Ingrese Usuario : ");
+    scanf("%s",&usuario);
+    printf("Ingrese Clave   : ");
+    scanf("%s",&contra);
+    if (strcmp(usuario,ADMIN)==0 && strcmp(clave,contra)==0) {
+    enlace();
+} else {
+    printf("\nACCESO DENEGADO\n");
+}
+    if(i>=4){
+    break;
+}
+}
+while(strcmp(clave,contra));
+break;
+}
+}
+void enlace(){
+system("CLS");
+    printf(" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<CAJERO AUTOMATICO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
+    printf("|\t                                                                     |\n");
+    printf("|\t                                                                     |\n");
+    printf("|\t                                                                     |\n");
+    printf("|\t       1. CONSULTA DE SALDO             2. EXTRACCIONES              |\n");
+    printf("|\t                                                                     |\n");
+    printf("|\t                                                                     |\n");
+    printf("|\t                                                                     |\n");
+    printf("|\t       3.DEPOSITO DE DINERO             4.TRANSFERENCIA              |\n");
+    printf("|\t                                                                     |\n");    
+    printf("|\t                                                                     |\n");
+    printf("|\t       5.CAMBIO DE CLAVE                6.PAGAR FACTURAS             |\n");
+    printf("|\t                                                                     |\n");
+    printf("|\t                                                                     |\n");
+    printf("|============================================================================|\n");
+}
+void nudo()
+{
+    int a,i;
+    char usuario[6];
+    char nom[50];
+    char ape[50];
+    char user[10];
+    char contra[10];
+    char con1[50];
+    char ADMIN[10] = "lol";
+    char clave[10] = "4444";
+    int cuil;
+    int t;
+    float b;
+    printf("Ingrese operacion \n");
+    scanf("%d",&a);
+    switch(a){
+            case 1:
+                  printf("su saldo es: %f",saldo);
+                  rep();
+                  break;
+            case 2:
+                  printf("Cuanto desea extraer: ");
+                  scanf("%f",&b);
+                  saldo=saldo-b;
+                  printf("Su saldo actual es: %f ",saldo);
+                  rep();
+                  break;
+            case 3:
+                  printf("Monto a depositar:");
+                  scanf("%f",&b);
+                  saldo=saldo+b;
+                  printf("su saldo actual es: %f",saldo);
+                  rep();
+                  break;
+            case 4:
+                  printf("CBU:\t");
+                  scanf("%d",&t);
+                  system("CLS");
+                  printf("MONTO:\t");
+                  scanf("%f",&b);
+                  saldo=saldo-b;
+                  system("CLS");
+                  printf("TRANFERENCIA REALIZADA CON EXITO");
+                  rep();
+                  break;
+            case 5:
+                  printf("Ingrese su nueva clave: ");
+                  scanf("%d",&clave);
+                  system("CLS");
+                  printf("Ingrese su clave: ");
+                  scanf("%s",&contra);
+                  rep();
+                  break;
+            case 6:
+                  printf("INGRESE NUMERO DE CUENTA:\t");
+                  scanf("%d",&t);
+                  printf("Ingrese monto:\t");
+                  scanf("%f",&b);
+                  saldo=saldo-b;
+                  rep();
+                  break;    
+    }
+}
+void rep(){
+int i,l;
+  for(l==0;l<1;l++){
+    printf("\n\t\t1. Menu\n\t\t2.SALIR\t");
+    scanf("%d",&i);
+    if(i==1){               
+	system("CLS");
+    enlace();
+    nudo();    
+    }
+  }
+}
+int main(int argc, char *argv[]) {
+    inicio();
+    enlace();
+    nudo();
+    rep();
+    return 0;
+}
