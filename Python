@@ -22,3 +22,17 @@ elif operacion == 4:
     print(f"El resultado es: {resul}")
 else:
     print("Opcion incorrecta")
+
+----------------------------------------------------------------------------------------------------------------
+
+
+a = input("Ingrese TEA TED O TEP:")
+
+if a == 'Tea' or a == 'TEA' or a == 'tea':
+    print("Esta aprobado")
+elif a == 'Ted' or a == 'TED' or a == 'ted':
+    print("Esta en proceso")
+elif a == 'Tep' or a == 'TEP' or a == 'tep':
+    print("Esta desaprobado")
+else:
+    print("Error")
