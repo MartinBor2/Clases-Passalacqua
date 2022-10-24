@@ -1,0 +1,24 @@
+# Armar un programa en el que el usuario ingresara dos numero. El sistema le dara la opcion al usuario de la 
+# operacion matematica a realizar.
+# 1= suma 2= resta 3= multiplicacion 4= division.
+# el sistema deolvera el resultado de la operacion.
+
+num1 = int(input("Ingrese un numero:"))
+num2 = int(input("Ingrese otro numero"))
+
+operacion = int(input("Elija operacion: \n" "1=suma 2=resta 3=multiplicacion 4=division"))
+
+if operacion==1:
+    resul = num1+num2
+    print(f"El resultado es: {resul}")
+elif operacion == 2:
+    resul = num1-num2
+    print(f"El resultado es: {resul}")
+elif operacion == 3:
+    resul = num1*num2
+    print(f"El resultado es: {resul}")
+elif operacion == 4:
+    resul = num1/num2
+    print(f"El resultado es: {resul}")
+else:
+    print("Opcion incorrecta")
