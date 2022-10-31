@@ -1,0 +1,15 @@
+# Armar un programa en el que el usuario ingresara 10 notal del 1 al 10. El sistema devolvera como resultado la 
+# Cantidad de notas mayores o iguales a 7 y la cantidad de notas menores a 7.
+altas = 0 
+bajas = 0
+a = 1
+
+while a<=10:
+    notas = int(input("Ingrese las notas: "))
+    if notas >= 7:
+        altas = altas + 1
+    else:
+        bajas = bajas + 1
+    a=a+1
+print(f"La cantidad de alumnos con notas >= 7 son {altas}")
+print(f"La cantidad de alumnos con notas <7 son {bajas}")
